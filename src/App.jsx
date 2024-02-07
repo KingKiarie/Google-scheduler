@@ -12,9 +12,7 @@ function App() {
     <>
       <Preloader />
       <Navbar />
-      <div>
-        <h1>Hello Kevin</h1>
-      </div>
+      
     </>
   );
 }
