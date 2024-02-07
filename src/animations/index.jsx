@@ -46,5 +46,36 @@ export const preloaderAnimation = () => {
       opacity: 0,
       y: 80,
       ease: "expo.easeOut",
+    })
+    .to(
+      ".preloader",
+      {
+        duration: 1.5,
+        height: "0vh",
+        ease: "power3.easeout",
+        onComplete: mobileLanding(),
+      },
+      "-=2"
+    )
+    .from(".landing__main .text", {
+      duration: 2,
+      y: 10,
+      opacity: 0,
+      stagger: {
+        amount: 2,
+      },
+      ease: "expo.easeOut",
+      //   onComplete: animateMainShape(),
+    });
+};
+
+export const mobileLanding = () => {
+  window.innerWidth < 763 &&
+    tl.from(".landing__main2", {
+      duration: 1,
+      delay: 0,
+      opacity: 0,
+      y: 80,
+      ease: "expo.easeOut",
     });
 };

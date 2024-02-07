@@ -10,9 +10,7 @@ const Preloader = () => {
     <div className="preloader">
       <div className="text-container">
         <span>Developer</span>
-        <span>Technical blogger</span>
-        <span>Graphic</span>
-        <span>Recorder</span>
+        <span>UX</span>
         <span>Designer</span>
       </div>
     </div>
